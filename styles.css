@@ -1211,18 +1211,107 @@ grid-template-columns: repeat(3, 1fr);
 } */
 
 
-.skills__bar{height:8px;background:#e9e6ff;border-radius:4px;overflow:hidden}
-.skills__percentage{display:block;height:100%;background:#7a5af8;border-radius:4px}
+./* Skills Section */
+.skills__container {
+  row-gap: 2rem;
+}
 
-/* widths per skill */
-.skills__react{width:70%}
-.skills__django{width:60%}
-.skills__mysql{width:60%}
-.skills__express{width:60%}
-.skills__node{width:50%}
-.skills__html{width:90%}
-.skills__css{width:75%}
-.skills__js{width:80%}
-.skills__boots{width:80%}
+.skills__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-1-5);
+  cursor: pointer;
+}
+
+.skills__icon,
+.skills__arrow {
+  font-size: 2rem;
+  color: var(--first-color);
+}
+
+.skills__icon {
+  margin-right: var(--mb-0-75);
+}
+
+.skills__titles {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.skills__subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.skills__arrow {
+  margin-left: auto;
+  transition: transform 0.4s;
+}
+
+.skills__list {
+  row-gap: 1rem;
+  padding-left: 2.5rem;
+}
+
+.skills__titles-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+}
+
+/* Skill bar */
+.skills__bar {
+  height: 8px;
+  background: var(--first-color-lighter);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skills__percentage {
+  display: block;
+  height: 100%;
+  background: var(--first-color);
+  border-radius: 4px;
+}
+
+/* Widths for each skill */
+.skills__react { width: 70%; }
+.skills__django { width: 60%; }
+.skills__mysql { width: 60%; }
+.skills__express { width: 60%; }
+.skills__node { width: 50%; }
+.skills__html { width: 90%; }
+.skills__css { width: 75%; }
+.skills__js { width: 80%; }
+.skills__boots { width: 80%; }
+.skills__java { width: 60%; }
+.skills__c { width: 60%; }
+.skills__cpp { width: 50%; }
+.skills__python { width: 30%; }
+.skills__pencils { width: 70%; }
+.skills__painting { width: 60%; }
+.skills__anime { width: 60%; }
+.skills__canvas { width: 40%; }
+
+/* Open/close animation */
+.skills__close .skills__list {
+  height: 0;
+  overflow: hidden;
+}
+
+.skills__open .skills__list {
+  height: auto;
+  margin-bottom: var(--mb-1-5);
+}
+
+.skills__open .skills__arrow {
+  transform: rotate(-180deg);
+}
+
 
 
