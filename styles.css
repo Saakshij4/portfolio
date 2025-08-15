@@ -1209,3 +1209,20 @@ grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
   }
 } */
+
+
+.skills__bar{height:8px;background:#e9e6ff;border-radius:4px;overflow:hidden}
+.skills__percentage{display:block;height:100%;background:#7a5af8;border-radius:4px}
+
+/* widths per skill */
+.skills__react{width:70%}
+.skills__django{width:60%}
+.skills__mysql{width:60%}
+.skills__express{width:60%}
+.skills__node{width:50%}
+.skills__html{width:90%}
+.skills__css{width:75%}
+.skills__js{width:80%}
+.skills__boots{width:80%}
+
+
